@@ -1,0 +1,5 @@
+library(tidyverse)
+
+train <- read_csv('train.csv')
+
+naive_regression <- lm(Target ~ ., data = train)
